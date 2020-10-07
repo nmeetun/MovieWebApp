@@ -1,0 +1,89 @@
+.nav-bar {
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 8;
+    background: #3d3c3c;
+    overflow: hidden;
+    color: #919191;
+    border-bottom: 1px solid #2f2f2f;
+    backface-visibility: hidden;
+
+    .nav-logo {
+        margin-left: 5%;
+    }
+    .pull-left {
+        float: left!important;
+
+        a {
+            text-decoration: none!important;
+            color: #428bca;
+            background-color: transparent;
+        }
+    }
+
+    .header-slogan {
+        font-size: 1.2em;
+        margin-left: 2%;
+        margin-top: 15px;
+    }
+    .pull-left {
+        float: left!important;
+    }
+
+    .main-nav-links{
+        float: right;
+        margin-right: 5%;
+
+        #quick-search {
+            float: left;
+            margin-top: 15px;
+
+            #quick-search-container {
+                position: relative;
+                margin-right: 10px;
+
+                #quick-search-input{
+                    width: 250px;
+                    height: 25px;
+                    font-weight: 700;
+                    color: #919191;
+                    border: 2px solid #333333;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    padding: 4px 30px;
+                    background: #1d1d1d url(https://yts.mx/assets/images/website/icon-search.svg) no repeat 9px 8px;
+
+                    #quick-search-input input[type=text] {
+                        border: 1px solid #ccc;  
+                  }
+                }
+            }
+        }
+
+        .nav-links{
+            padding-top: 5px;
+            display: inline-flex;
+
+            li{
+                display: inline-flex;
+                margin-right: 20px;
+
+                a{
+                    overflow: hidden;
+                    display: inline-block;
+                    font-weight: 700;
+                    color: #919191;
+                    transition: 0.2s ease-in-out;
+                }
+
+                a:hover{
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}

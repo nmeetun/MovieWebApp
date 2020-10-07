@@ -1,0 +1,288 @@
+*{
+    font-family: Arimo,Arial,Helvetica,lucida grande,sans-serif;
+    letter-spacing: -.03em;
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: #1d1d1d;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+.home-content{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1{
+        font-size: 2.5em;
+        font-weight: 700;
+        text-shadow: 0 2px 2px rgba(0,0,0,.4);;
+        margin-bottom: 15px;
+        margin-top: 75px;
+        margin-left: 23%;
+        color: #ccc
+    }
+
+    p {
+        font-size: .95em;
+        color: #ccc;
+        width: 650px;
+        margin: 0 auto;
+        line-height: 21px;
+        margin-bottom: 30px;
+        margin-left: auto;
+    }
+
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+
+        h2 {
+            color: #6ac045;
+            font-size: 1.4em;
+            margin-top: 10px;
+    
+            a {
+                padding-left: 10%;
+                font-size: 14px;
+                font-weight: 700;
+                color: #919191;
+                transition: color .25s ease-in-out;
+                -moz-transition: color .25s ease-in-out;
+                -webkit-transition: color .25s ease-in-out;
+            }
+        }
+    }
+
+    .main-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        // z-index: 7;
+        margin: 0 auto;
+
+        .browse-content {
+            background-color: #1d1d1d;
+
+            .container {
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            h2 {
+                display: block;
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+                color: #6ac045;
+                font-size: 1.4em;
+                margin-top: 10px;
+
+                b{
+                    font-weight: 700;
+                }
+            }
+
+            section {
+                margin-top: 20px;
+                display: block;
+
+                .row {
+                    margin-left: -15px;
+                    margin-right: -15px;
+
+                    .browse-movie-wrap {
+                        margin-bottom: 15px;
+                    }
+
+                    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .col-sm-18, .col-md-18, .col-lg-18, .col-xs-19, .col-sm-19, .col-md-19, .col-lg-19, .col-xs-20, .col-sm-20, .col-md-20, .col-lg-20 {
+                        position: relative;
+                        min-height: 1px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        float: left;
+                        width: 20%;
+
+                        a {
+                            color: #428bca;
+                            text-decoration: none;
+                        }
+
+                        .browse-movie-link {
+                            display: inline-block;
+                            max-width: 220px;
+                            border: 5px solid #fff;
+                            transition: border .15s ease-in-out;
+                            -moz-transition: border .15s ease-in-out;
+                            -webkit-transition: border .15s ease-in-out;
+                            border-radius: 4px;
+                            -webkit-border-radius: 4px;
+                            -moz-border-radius: 4px;
+                            font-size: 24px;
+                            width: 180px;
+                            height: 265px;
+                        }
+
+                        figure {
+                            display: block;
+                            margin-block-start: 1em;
+                            margin-block-end: 1em;
+                            margin-inline-start: 40px;
+                            margin-inline-end: 40px;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            overflow: hidden;
+                            position: relative;
+                            width: 100%;
+                            margin: 0;
+
+                            img {
+                                vertical-align: middle;
+                                border: 0;
+                            }
+    
+                            .img-responsive {
+                                display: block;
+                                max-width: 100%;
+                                height: auto;
+                            }
+    
+                            figcaption {
+                                color: #fff;
+                                height: 100%;
+                                left: 0;
+                                opacity: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                z-index: 2;
+                                width: 100%;
+                                -webkit-transition: all 300ms;
+                                -moz-transition: all 300ms;
+                                transition: all 300ms;
+                                -webkit-transition-delay: 100ms;
+                                -moz-transition-delay: 100ms;
+                                transition-delay: 100ms;
+                                padding-top: 20px;
+                                display: block;
+                                box-sizing: border-box;
+    
+                                span.icon-star {
+                                    position: relative;
+                                    width: 100%;
+                                    color: #6ac045;
+                                    -webkit-transition: all 300ms ease;
+                                    -moz-transition: all 300ms ease;
+                                    transition: all 300ms ease;
+                                }
+        
+                                [class^=icon-], [class*=" icon-"] {
+                                    font-family: icomoon;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-variant: normal;
+                                    text-transform: none;
+                                    line-height: 1;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                }
+        
+                                .rating {
+                                    margin-bottom: 20px;
+                                }
+        
+                                h4 {
+                                    font-size: 25px;
+                                    position: relative;
+                                    width: 100%;
+                                    padding-left: 0!important;
+                                    padding-right: 0!important;
+                                    font-weight: 700;
+                                    color: #fff;
+                                }
+
+                                .button-green-download2-big {
+                                    background: #6ac045;
+                                    border-radius: 3px;
+                                    -webkit-border-radius: 3px;
+                                    -moz-border-radius: 3px;
+                                    display: block;
+                                    font-weight: 700;
+                                    color: #fff;
+                                    top: 35px;
+                                    font-size: 16px;
+                                    position: relative;
+                                    width: 130px;
+                                    padding: 7px 0;
+                                    margin: 0 auto;
+                                    -webkit-transition: all 300ms ease;
+                                    -moz-transition: all 300ms ease;
+                                    transition: all 300ms ease;
+                                }
+                            }
+                            
+                        }
+
+                        .browse-movie-title, .browse-movie-title:focus, #comments-box a {
+                            color: #fff;
+                            font-weight: 700;
+                            display: block;
+                            transition: color .15s ease-in-out;
+                            -moz-transition: color .15s ease-in-out;
+                            -webkit-transition: color .15s ease-in-out;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: .95em;
+                        }
+
+                        .browse-movie-year {
+                            font-size: .85em;
+                            color: #919191;
+                        }
+                        
+                    }
+                }
+
+                #quick-search {
+                    float: left;
+                    margin-top: 15px;
+        
+                    #quick-search-container {
+                        position: relative;
+                        margin-right: 10px;
+        
+                        #quick-search-input{
+                            width: 250px;
+                            height: 25px;
+                            font-weight: 700;
+                            color: #919191;
+                            border: 2px solid #333333;
+                            border-radius: 20px;
+                            -webkit-border-radius: 20px;
+                            padding: 4px 30px;
+                            background: #1d1d1d url(https://yts.mx/assets/images/website/icon-search.svg) no repeat 9px 8px;
+        
+                            #quick-search-input input[type=text] {
+                                border: 1px solid #ccc;  
+                          }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+}

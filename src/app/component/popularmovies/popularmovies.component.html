@@ -1,0 +1,9 @@
+<div class="list-container">
+  <div class="movie-container" *ngFor="let movie of movies">
+    <div class="movie-item">
+      <div [ngStyle]="getBackground(movie.imageUrl)"></div>
+      <div><a href="moviedetails">{{ movie.title }}</a></div>
+      <button mat-raised-button (click)="openRating()">Rating</button>
+    </div>
+  </div>
+</div>

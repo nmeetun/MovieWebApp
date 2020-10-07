@@ -1,0 +1,22 @@
+.list-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+  
+    .movie-container {
+      display: flex;
+      flex-direction: row;
+      margin: 50px;
+  
+      .movie-item {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 150px;
+        border: 1px solid #cccccc;
+      }
+    }
+  }

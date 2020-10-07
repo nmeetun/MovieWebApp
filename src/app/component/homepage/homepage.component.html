@@ -1,0 +1,52 @@
+<div class="container home-content" style="background: #171717;">
+    <div class="hidden-xs hidden-sm">
+        <h1>{{ 'home.title' | translate }}</h1>
+        <p>
+            {{'home.para' | translate}}
+            <br><br>
+        </p>
+        <label for ="">
+            {{ 'home.select' | translate}}
+            <select #langselect (change)="translate.use(langselect.value)">
+                <option *ngFor = "let lang of translate.getLangs()" [value] = "lang">{{ lang }}</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="row">
+        <h2>Latest HD Movies Torrents <a href="#">Browse All</a></h2>
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" placeholder="Search by title..." [(ngModel)]="searchTerm" >
+    </div>
+
+    <div class="main-content">
+        <div class="browse-content">
+            <div class="container" *ngFor = "let lists of (movie | movieFilter:searchTerm)">
+                <section>
+                    <div class="row">
+                        <div class="browse-movie-wrap col-xs-10 col-sm-4 col-md-5 col-lg-4">
+                            <a href="#" class="browse-movie-link">
+                            <figure>
+                                <img class="img-responsive" src="{{lists.posterurl}}" alt="#" width="170" height="255">
+                                <figcaption class="hidden-xs hidden-sm">
+                                    <span class="icon-star"></span>
+                                    <h4 class="rating">Ratings: {{lists.imdbRating}}</h4> 
+                                    <span class="button-green-download2-big">View Details</span>
+                                </figcaption>
+                            </figure>
+                            </a>
+
+                            <div class="browse-movie-bottom">
+                                <a href="moviedetails" class="browse-movie-title">{{lists.title}}</a>
+                                <div class="browse-movie-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
